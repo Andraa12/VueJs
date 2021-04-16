@@ -1,41 +1,34 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-      <b-container>    
-         <b-col cols="4-5" class="card mt-5"><h1></h1></b-col>
-         <b-col cols="4-5" class="card mt-5"></b-col>
-         <b-col cols="4-5" class="card mt-5"></b-col>
-      </b-container>
+  <div>
+ <b-navbar toggleable type="dark" variant="dark">
+    <b-navbar-brand class="navbar" href="#">Wisata Di Malang</b-navbar-brand>
+ 
+ </b-navbar>
+     <img class="logo mt-5" src="../assets/logo.png" alt="">
+     <h1 class="text text-center mt-5">Jodipan</h1>
+     <h4 class="text2 text-center">hallo</h4>
+     <img class="jodipan mt-5 col-md-4" src="../assets/jodipan.jpg">
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+export default{
+  data(){
+    return{
+
+      };
+   },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.card{
-  height: 300px;
-  background-color: gray;
+.text2{
+  margin-top: 30px;
 }
 </style>
